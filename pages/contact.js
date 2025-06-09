@@ -20,7 +20,7 @@ export default function Contact() {
             ylmz.fth@gmail.com
           </a>
           <a 
-            href="https://www.linkedin.com/in/fatihyilmaz/" 
+            href="https://www.linkedin.com/in/ylmzfth/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-600 hover:text-blue-800 transition-colors"

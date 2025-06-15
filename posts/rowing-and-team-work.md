@@ -6,7 +6,7 @@ categories:
   - Team Leadership
   - Software Development
   - Agile
-image: '/images/Rowing and team work/1593356708637.png'
+image: '/images/Rowing and team work/rowing-image1.png'
 original_link: 'https://www.linkedin.com/pulse/rowing-team-work-fatih-y%C4%B1lmaz'
 ---
 

@@ -7,7 +7,7 @@ categories:
   - Leadership
   - Work-Life Balance
   - Mindfulness
-image: '/images/Mindfulness is just a hype or life changing concept?/Mindfullness-Image1.jpeg'
+image: '/images/Mindfulness/mindfulness-image1.jpg'
 original_link: 'https://www.linkedin.com/pulse/mindfulness-just-hype-life-changing-concept-fatih-y%C4%B1lmaz'
 ---
 

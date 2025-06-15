@@ -10,7 +10,7 @@ export default function Home() {
           className="rounded-full w-64 h-64 object-cover object-top shadow-lg mb-4" 
         />
         <h1 className="text-4xl font-bold mb-2">Fatih Yılmaz</h1>
-        <p className="text-xl text-gray-600 mb-4">Senior Software Project Manager & Technical Leader</p>
+        <p className="text-xl text-gray-600 mb-4">Senior Software Project Manager</p>
       </section>
       <section className="max-w-2xl mx-auto p-4">
         <h2 className="text-2xl font-semibold mb-2">Highlights</h2>

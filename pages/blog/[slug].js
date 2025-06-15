@@ -7,11 +7,11 @@ import Layout from '../../components/Layout';
 
 export default function Post({ frontMatter, content }) {
   return (
-    <Layout>
-      <article className="max-w-4xl mx-auto px-4 py-8">
+    <Layout title={frontMatter.title}>
+      <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
-        <header className="mb-8">
-          <div className="flex items-center text-sm text-gray-500 mb-4">
+        <header className="mb-12">
+          <div className="flex items-center text-sm text-gray-500 mb-6">
             <time dateTime={frontMatter.date}>
               {new Date(frontMatter.date).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -26,11 +26,11 @@ export default function Post({ frontMatter, content }) {
               </>
             )}
           </div>
-          <h1 className="text-4xl font-bold mb-4">{frontMatter.title}</h1>
+          <h1 className="text-4xl font-bold mb-6">{frontMatter.title}</h1>
           {frontMatter.description && (
-            <p className="text-xl text-gray-600 mb-6">{frontMatter.description}</p>
+            <p className="text-xl text-gray-600 mb-8">{frontMatter.description}</p>
           )}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-8">
             {frontMatter.categories?.map(category => (
               <span 
                 key={category}
@@ -41,7 +41,7 @@ export default function Post({ frontMatter, content }) {
             ))}
           </div>
           {frontMatter.image && (
-            <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
+            <div className="relative w-full h-96 mb-12 rounded-lg overflow-hidden">
               <img
                 src={frontMatter.image}
                 alt={frontMatter.title}
@@ -53,12 +53,12 @@ export default function Post({ frontMatter, content }) {
 
         {/* Content */}
         <div 
-          className="prose prose-lg max-w-none"
+          className="prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 hover:prose-a:text-blue-800"
           dangerouslySetInnerHTML={{ __html: content }} 
         />
 
         {/* Footer */}
-        <footer className="mt-12 pt-6 border-t border-gray-200">
+        <footer className="mt-16 pt-8 border-t border-gray-200">
           <div className="flex justify-between items-center">
             <div className="text-sm text-gray-500">
               Originally published on{' '}

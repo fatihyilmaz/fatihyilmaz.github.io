@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function Layout({ children, title = 'Personal Website' }) {
+export default function Layout({ children, title = 'Fatih Yılmaz' }) {
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Fatih Yılmaz - Senior Software Project Manager" />
       </Head>
       <nav className="bg-maxbill-black text-maxbill-white p-4">
         <ul className="flex space-x-4 max-w-4xl mx-auto">

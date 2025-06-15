@@ -6,7 +6,7 @@ import Layout from '../../components/Layout';
 
 export default function Blog({ posts }) {
   return (
-    <Layout>
+    <Layout title="Blog | Fatih Yılmaz">
       <section className="max-w-6xl mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Blog</h1>

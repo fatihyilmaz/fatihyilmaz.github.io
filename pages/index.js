@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 export default function Home() {
@@ -19,18 +20,18 @@ export default function Home() {
               <span className="font-semibold text-ink"> Industrial 5G Private Network</span>.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
-              <a
-                href="/contact"
+              <Link
+                href="/contact/"
                 className="bg-ink text-frost px-6 py-3 rounded-full text-sm uppercase tracking-[0.2em] hover:bg-dune transition"
               >
                 Schedule a Call
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                href="/about/"
                 className="border border-ink/20 px-6 py-3 rounded-full text-sm uppercase tracking-[0.2em] hover:border-ink/40"
               >
                 View Resume
-              </a>
+              </Link>
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-ink/70">
               <span className="flex items-center gap-2">
@@ -38,6 +39,7 @@ export default function Home() {
                 Senior Software Project Manager
               </span>
               <span>Industrial network solutions</span>
+              <span>Open to project management mentorship</span>
             </div>
           </div>
           <div className="relative">
@@ -98,9 +100,9 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.3em] text-ink/50">Signature Work</p>
             <h2 className="font-display text-4xl text-ink mt-4">Software platforms for industrial networks.</h2>
           </div>
-          <a href="/about" className="text-sm uppercase tracking-[0.2em] text-ink/70 hover:text-ink">
+          <Link href="/about/" className="text-sm uppercase tracking-[0.2em] text-ink/70 hover:text-ink">
             Explore the full story →
-          </a>
+          </Link>
         </div>
         <div className="grid md:grid-cols-3 gap-6 mt-10">
           {[
@@ -153,12 +155,12 @@ export default function Home() {
             <h2 className="font-display text-3xl text-ink mt-4">Interested in working together?</h2>
             <p className="text-ink/70 mt-3">Reach out to start a conversation.</p>
           </div>
-          <a
-            href="/contact"
+          <Link
+            href="/contact/"
             className="bg-ink text-frost px-8 py-4 rounded-full text-sm uppercase tracking-[0.2em] hover:bg-dune transition"
           >
             Start a Conversation
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

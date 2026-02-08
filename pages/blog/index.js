@@ -46,7 +46,7 @@ export default function Blog({ posts }) {
                   )}
                 </div>
                 <h2 className="font-display text-2xl text-ink mb-3">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-ink/70 transition-colors">
+                  <Link href={`/blog/${post.slug}/`} className="hover:text-ink/70 transition-colors">
                     {post.title}
                   </Link>
                 </h2>
@@ -65,7 +65,7 @@ export default function Blog({ posts }) {
                     ))}
                   </div>
                   <Link 
-                    href={`/blog/${post.slug}`}
+                    href={`/blog/${post.slug}/`}
                     className="text-xs uppercase tracking-[0.3em] border-b border-ink pb-1 hover:text-ink/70"
                   >
                     Read more →

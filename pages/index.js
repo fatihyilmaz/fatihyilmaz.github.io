@@ -6,7 +6,7 @@ export default function Home() {
     <Layout>
       <section className="bg-hero-gradient">
         <div className="max-w-6xl mx-auto px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.4em] text-ink/50">Senior Software Project Manager</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-ink/50">Senior Software Project Manager</p>
           <h1 className="font-display text-6xl md:text-7xl leading-[1.05] text-ink mt-6">
             Fatih Yılmaz
           </h1>
@@ -15,7 +15,7 @@ export default function Home() {
             provide identity access management, dashboards, logging, and license management to speed time-to-market of
             multiple products, including Industrial 5G.
           </p>
-          <div className="mt-10 flex flex-wrap gap-6 text-sm text-ink/60 uppercase tracking-[0.2em]">
+          <div className="mt-10 flex flex-wrap gap-6 text-sm text-ink/60 uppercase tracking-[0.15em]">
             <span>Karlsruhe, Germany</span>
             <span>Open to project management mentorship</span>
           </div>
@@ -43,12 +43,12 @@ export default function Home() {
             label: 'Led software projects totaling around 10 million euros in R&D budget.'
           },
           {
-            value: '12-person offshore team',
-            label: 'Leading an offshore development team of 12 people.'
+            value: 'Teams of 10+',
+            label: 'Led teams of more than 10 people, including offshore teams.'
           },
           {
-            value: '18-person team lead',
-            label: 'Line management responsibility for a team of 18 people.'
+            value: 'Team building',
+            label: 'Built up teams and hired team members.'
           }
         ].map((stat) => (
           <div key={stat.value} className="border-t border-ink/20 pt-6">
@@ -68,7 +68,7 @@ export default function Home() {
             Explore the full story →
           </Link>
         </div>
-        <div className="mt-10 space-y-8 border-t border-ink/10 pt-10">
+        <div className="mt-10 border-t border-ink/10 pt-2 divide-y divide-ink/10">
           {[
             {
               title: 'Software Platform Project (Siemens AG, Karlsruhe)',
@@ -84,7 +84,7 @@ export default function Home() {
               desc: 'Product owner responsibilities alongside software project management.'
             }
           ].map((item) => (
-            <div key={item.title} className="grid md:grid-cols-[220px_1fr] gap-6">
+            <div key={item.title} className="grid md:grid-cols-[220px_1fr] gap-6 py-6">
               <h3 className="font-display text-xl text-ink">{item.title}</h3>
               <p className="text-sm text-ink/70">{item.desc}</p>
             </div>

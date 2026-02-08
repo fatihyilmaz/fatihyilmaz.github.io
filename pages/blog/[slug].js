@@ -8,10 +8,10 @@ import Layout from '../../components/Layout';
 export default function Post({ frontMatter, content }) {
   return (
     <Layout title={frontMatter.title}>
-      <article className="max-w-4xl mx-auto px-4 py-12">
+      <article className="max-w-4xl mx-auto px-6 py-16">
         {/* Header */}
         <header className="mb-12">
-          <div className="flex items-center text-sm text-gray-500 mb-6">
+          <div className="flex items-center text-xs uppercase tracking-[0.2em] text-ink/50 mb-6">
             <time dateTime={frontMatter.date}>
               {new Date(frontMatter.date).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -26,15 +26,15 @@ export default function Post({ frontMatter, content }) {
               </>
             )}
           </div>
-          <h1 className="text-4xl font-bold mb-6">{frontMatter.title}</h1>
+          <h1 className="font-display text-5xl text-ink mb-6">{frontMatter.title}</h1>
           {frontMatter.description && (
-            <p className="text-xl text-gray-600 mb-8">{frontMatter.description}</p>
+            <p className="text-lg text-ink/70 mb-8">{frontMatter.description}</p>
           )}
           <div className="flex flex-wrap gap-2 mb-8">
             {frontMatter.categories?.map(category => (
               <span 
                 key={category}
-                className="px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-full"
+                className="px-2 py-1 text-xs uppercase tracking-[0.2em] border border-ink/10 text-ink/60"
               >
                 {category}
               </span>
@@ -53,27 +53,27 @@ export default function Post({ frontMatter, content }) {
 
         {/* Content */}
         <div 
-          className="prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 hover:prose-a:text-blue-800"
+          className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-ink prose-p:text-ink/70 prose-p:leading-relaxed prose-a:text-ink hover:prose-a:text-ink/60"
           dangerouslySetInnerHTML={{ __html: content }} 
         />
 
         {/* Footer */}
-        <footer className="mt-16 pt-8 border-t border-gray-200">
+        <footer className="mt-16 pt-8 border-t border-ink/10">
           <div className="flex justify-between items-center">
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-ink/60">
               Originally published on{' '}
               <a 
                 href={frontMatter.original_link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800"
+                className="text-ink underline"
               >
                 LinkedIn
               </a>
             </div>
             <a 
-              href="/blog"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              href="/blog/"
+              className="text-xs uppercase tracking-[0.3em] border-b border-ink pb-1 hover:text-ink/70"
             >
               ← Back to Blog
             </a>

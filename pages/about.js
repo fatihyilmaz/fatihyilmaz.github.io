@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Layout>
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <p className="text-xs uppercase tracking-[0.4em] text-ink/50">About</p>
+        <p className="text-xs uppercase tracking-[0.25em] text-ink/50">About</p>
         <h1 className="font-display text-5xl text-ink mt-6">Profile</h1>
         
         <div className="mt-8 space-y-6 text-ink/70">
@@ -21,7 +21,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 gap-6 border-t border-ink/10 pt-8">
             <div>
-              <h2 className="text-xs uppercase tracking-[0.3em] text-ink/50">Core Competencies</h2>
+              <h2 className="text-xs uppercase tracking-[0.2em] text-ink/50">Core Competencies</h2>
               <ul className="mt-4 space-y-2 text-sm">
                 <li>Software project management</li>
                 <li>Stakeholder management</li>
@@ -33,7 +33,7 @@ export default function About() {
               </ul>
             </div>
             <div>
-              <h2 className="text-xs uppercase tracking-[0.3em] text-ink/50">Contact</h2>
+              <h2 className="text-xs uppercase tracking-[0.2em] text-ink/50">Contact</h2>
               <ul className="mt-4 space-y-2 text-sm">
                 <li>Karlsruhe, Germany</li>
                 <li>ylmz.fth@gmail.com</li>
@@ -52,7 +52,7 @@ export default function About() {
           </div>
 
           <div className="border-t border-ink/10 pt-8">
-            <h2 className="text-xs uppercase tracking-[0.3em] text-ink/50">Key Achievements</h2>
+            <h2 className="text-xs uppercase tracking-[0.2em] text-ink/50">Key Achievements</h2>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 Leading a software platform that provides identity access management, dashboard, logging, and license
@@ -62,13 +62,13 @@ export default function About() {
                 Built a new team from scratch and led delivery of SINEC INS (Infrastructure Network Services), a tool for
                 central network services in the Operational Technology (OT) field.
               </li>
-              <li>Led an offshore development team with 12 people.</li>
-              <li>Line management responsibility for a team of 18 people and hired team members.</li>
+              <li>Led teams of more than 10 people, including offshore teams.</li>
+              <li>Built up teams and hired team members.</li>
             </ul>
           </div>
 
           <div className="mt-6 space-y-6">
-            <h3 className="text-xs uppercase tracking-[0.3em] text-ink/50">Professional Experience</h3>
+            <h3 className="text-xs uppercase tracking-[0.2em] text-ink/50">Professional Experience</h3>
             <div className="space-y-6">
               <div>
                 <h4 className="font-display text-xl text-ink">
@@ -84,7 +84,7 @@ export default function About() {
                     Product owner responsibility of the platform alongside software project management.
                   </li>
                   <li>
-                    Leading an offshore development team with 12 people.
+                    Led teams of more than 10 people, including offshore teams.
                   </li>
                   <li>
                     Cross-functional collaboration with other product teams and stakeholders such as UI/UX experts and product managers.
@@ -102,10 +102,7 @@ export default function About() {
                     Project manager of the future software platform of Siemens Industrial Communication, starting from ideation.
                   </li>
                   <li>
-                    Line management responsibility for a team of 18 people.
-                  </li>
-                  <li>
-                    Built up the team and hired team members.
+                    Led teams of more than 10 people, including line management and hiring.
                   </li>
                 </ul>
               </div>
@@ -147,7 +144,7 @@ export default function About() {
           </div>
 
           <div className="mt-12 space-y-6 border-t border-ink/10 pt-8">
-            <h3 className="text-xs uppercase tracking-[0.3em] text-ink/50">Education & Certifications</h3>
+            <h3 className="text-xs uppercase tracking-[0.2em] text-ink/50">Education & Certifications</h3>
             <div className="space-y-6">
               <div>
                 <h4 className="font-display text-xl text-ink">

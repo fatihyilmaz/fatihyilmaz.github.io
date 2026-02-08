@@ -5,33 +5,42 @@ export default function Home() {
   return (
     <Layout>
       <section className="bg-hero-gradient">
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-ink/50">Senior Software Project Manager</p>
-          <h1 className="font-display text-6xl md:text-7xl leading-[1.05] text-ink mt-6">
-            Fatih Yılmaz
-          </h1>
-          <p className="text-xl text-ink/70 mt-6 max-w-2xl">
-            Senior software project manager with a strong technical background. Leading software platform initiatives that
-            provide identity access management, dashboards, logging, and license management to speed time-to-market of
-            multiple products, including Industrial 5G.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-6 text-sm text-ink/60 uppercase tracking-[0.15em]">
-            <span>Karlsruhe, Germany</span>
-            <span>Open to project management mentorship</span>
+        <div className="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-[0.25em] text-ink/50">Senior Software Project Manager</p>
+            <h1 className="font-display text-6xl md:text-7xl leading-[1.05] text-ink mt-6">
+              Fatih Yılmaz
+            </h1>
+            <p className="text-xl text-ink/70 mt-6 max-w-2xl">
+              Senior software project manager with a strong technical background. Leading software platform initiatives that
+              provide identity access management, dashboards, logging, and license management to speed time-to-market of
+              multiple products, including Industrial 5G.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-6 text-sm text-ink/60 uppercase tracking-[0.15em]">
+              <span>Karlsruhe, Germany</span>
+              <span>Open to project management mentorship</span>
+            </div>
+            <div className="mt-12 flex flex-wrap gap-6">
+              <Link
+                href="/about/"
+                className="text-sm uppercase tracking-[0.3em] border-b border-ink pb-2 hover:text-ink/70"
+              >
+                View Resume
+              </Link>
+              <Link
+                href="/contact/"
+                className="text-sm uppercase tracking-[0.3em] border-b border-ink pb-2 hover:text-ink/70"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
-          <div className="mt-12 flex flex-wrap gap-6">
-            <Link
-              href="/about/"
-              className="text-sm uppercase tracking-[0.3em] border-b border-ink pb-2 hover:text-ink/70"
-            >
-              View Resume
-            </Link>
-            <Link
-              href="/contact/"
-              className="text-sm uppercase tracking-[0.3em] border-b border-ink pb-2 hover:text-ink/70"
-            >
-              Contact
-            </Link>
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src="/profile.jpg"
+              alt="Fatih Yılmaz"
+              className="w-72 h-72 md:w-80 md:h-80 object-cover object-top rounded-full border border-ink/10"
+            />
           </div>
         </div>
       </section>

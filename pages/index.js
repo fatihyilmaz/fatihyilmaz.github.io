@@ -12,9 +12,9 @@ export default function Home() {
               Fatih Yılmaz
             </h1>
             <p className="text-xl text-ink/70 mt-6 max-w-2xl">
-              Senior software project manager with a strong technical background. Leading software platform initiatives that
-              provide identity access management, dashboards, logging, and license management to speed time-to-market of
-              multiple products, including Industrial 5G.
+              Senior software project manager with a strong technical background, combining hands-on engineering experience
+              with project management and product ownership. At Siemens AG, I lead teams and projects that deliver complex
+              software platforms, aligning stakeholders and building healthy delivery rhythm.
             </p>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-ink/60 uppercase tracking-[0.15em]">
               <span>Karlsruhe, Germany</span>

@@ -7,19 +7,20 @@ import Layout from '../../components/Layout';
 export default function Blog({ posts }) {
   return (
     <Layout title="Blog | Fatih Yılmaz">
-      <section className="max-w-6xl mx-auto px-4 py-8">
+      <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Blog</h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xs uppercase tracking-[0.4em] text-ink/50">Blog</p>
+          <h1 className="font-display text-5xl text-ink mt-6">Writing</h1>
+          <p className="text-lg text-ink/70 mt-4">
             Insights on software development, project management, and leadership
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {posts.map(post => (
             <article 
               key={post.slug}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="border-t border-ink/10 pt-6"
             >
               {post.image && (
                 <div className="relative h-48 w-full">
@@ -30,8 +31,8 @@ export default function Blog({ posts }) {
                   />
                 </div>
               )}
-              <div className="p-6">
-                <div className="flex items-center text-sm text-gray-500 mb-2">
+              <div className="pt-6">
+                <div className="flex items-center text-xs uppercase tracking-[0.2em] text-ink/50 mb-3">
                   <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
@@ -44,12 +45,12 @@ export default function Blog({ posts }) {
                     </>
                   )}
                 </div>
-                <h2 className="text-xl font-semibold mb-2">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors">
+                <h2 className="font-display text-2xl text-ink mb-3">
+                  <Link href={`/blog/${post.slug}`} className="hover:text-ink/70 transition-colors">
                     {post.title}
                   </Link>
                 </h2>
-                <p className="text-gray-600 mb-4 line-clamp-3">
+                <p className="text-ink/70 mb-4 line-clamp-3">
                   {post.description}
                 </p>
                 <div className="flex items-center justify-between">
@@ -57,7 +58,7 @@ export default function Blog({ posts }) {
                     {post.categories?.map(category => (
                       <span 
                         key={category}
-                        className="px-2 py-1 text-sm bg-gray-100 text-gray-700 rounded-full"
+                        className="px-2 py-1 text-xs uppercase tracking-[0.2em] border border-ink/10 text-ink/60"
                       >
                         {category}
                       </span>
@@ -65,7 +66,7 @@ export default function Blog({ posts }) {
                   </div>
                   <Link 
                     href={`/blog/${post.slug}`}
-                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    className="text-xs uppercase tracking-[0.3em] border-b border-ink pb-1 hover:text-ink/70"
                   >
                     Read more →
                   </Link>

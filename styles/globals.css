@@ -11,5 +11,7 @@
     font-family: theme('fontFamily.body');
     color: theme('colors.ink');
     background-color: theme('colors.frost');
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 }
